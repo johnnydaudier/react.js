@@ -3,15 +3,15 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './Components/NavBar';
 import CartIconComponent from './Components/CartIconComponent';
-import ItemListContainer from './Components/ContainerComp/ItemListContainer';
-import ItemCount from './Components/ContainerComp/ItemCount';
+import ItemListContainer from './Containers/ItemListContainer';
+import ItemCount from './Containers/ItemCount';
 
 
 
 function App() {
  
   
-  const hi = 'hola, mensaje de saludo ';
+  const hi = 'Hola, este es un mensaje de saludo ';
  
   
   
@@ -22,10 +22,9 @@ function App() {
       
       <div >
       <ItemListContainer greeting={hi}/>
+
       </div>
-      <div>
-        <ItemCount stock = {10} initial = {7} />
-      </div>
+      
     </div>
 
     
