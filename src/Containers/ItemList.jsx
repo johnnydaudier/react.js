@@ -4,13 +4,13 @@ import { products } from "./getFetch";
 import ItemCount from "./ItemCount";
 
 
-function ItemList(){
-    return  products.map( (prod) => 
+function ItemList({prod}){
+    return  products.map( (produ) => 
     <div>
-        <Item prod={prod}/>         
+        <Item prod={produ}/>         
     </div>
     );   
     
 }
 
-export default ItemList;
+export default ItemList; 
